@@ -1,0 +1,3 @@
+﻿como escrever algo que excute -> Console.Write("Ola Mundo");
+
+como 
