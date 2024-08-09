@@ -25,6 +25,11 @@ namespace Cap02_Ex03
 
             Console.WriteLine();
             Console.Write("Salario liquido ................");
+            Console.WriteLine(SL.ToString("##,##0.00"));
+
+            Console.WriteLine();
+            Console.Write("Tecla <Enter> para encerrar... ");
+            Console.ReadLine();
 
         }
     }
