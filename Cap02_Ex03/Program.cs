@@ -12,20 +12,22 @@ namespace Cap02_Ex03
         {
             float HT, VH, PD, SB, TD, SL;
 
-            Console.Write("Horas trabalhadas ...............: ");
+            Console.Write("Horas trabalhadas ...............: "); /* HV */
             HT = float.Parse(Console.ReadLine());
-            Console.Write("Valor da hora ...................: ");
+            Console.Write("Valor da hora ...................: ");  /* VH */
             VH = float.Parse(Console.ReadLine());
-            Console.Write("Valor do percentual de desconto .: ");
+            Console.Write("Valor do percentual de desconto .: ");  /* PD */
             PD = float.Parse(Console.ReadLine());
 
-            SB = HT * VH;
-            TD = (PD / 100) * SB;
-            SL = SB - TD;
+            SB = HT * VH; /* multiplica as variaveis citadas acima e acrescenta na variavel de salario bruto*/
+            TD = (PD / 100) * SB; /* acha o percentual de desconto em porcentagem dividindo ele por 100 e logo em seguida 
+                                   * multiplicando ele pelo salario bruto, para entao depoids acrescentar ele a variavel do salario total */
+            SL = SB - TD; /* entao descobre o salario liquido atraves da subtração do salario  bruto com o salario total de desconto */
 
             Console.WriteLine();
             Console.Write("Salario liquido ................");
-            Console.WriteLine(SL.ToString("##,##0.00"));
+            Console.WriteLine(SL.ToString("##,##0.00")); /* retorna o valor armazenado no salario liquido para colocar ele junto ao comentario em string, usando uma mascara
+                                                          * que retorna espaço para 2 casas decimais */
 
             Console.WriteLine();
             Console.Write("Tecla <Enter> para encerrar... ");
